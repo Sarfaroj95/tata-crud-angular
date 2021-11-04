@@ -1,0 +1,41 @@
+<div class="bg-light">
+  <div class="container py-5">
+    <app-header></app-header>
+    <div class="mt-4 col-lg-6 col-md-8 col-sm-12">
+      <div class="border border-primary">
+        <div class="bg-primary py-1">
+          <h5 class="text-white" style="margin-left: 20px;">{{customerData.name}} Details</h5>
+        </div>
+        <div class="p-3">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td>{{ customerData.name }}</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>{{ customerData.email }}</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>{{ customerData.phone }}</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>{{ customerData.address }}</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>{{ customerData.description }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <a [routerLink]="['/customer/dashboard']" class="btn btn-danger"
+            >Back to dashboard</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

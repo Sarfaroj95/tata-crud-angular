@@ -1,0 +1,37 @@
+<div class="bg-light">
+  <div class="container py-5">
+    <app-header></app-header>
+    <div>
+      <div class="mt-4 d-flex justify-content-end">
+        <a [routerLink]="['/customer/add']" class="btn btn-danger"
+          >Add Customer</a
+        >
+      </div>
+      <div>
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12"
+            *ngFor="let items of customer"
+          >
+            <div class="mt-4" [ngClass]="{'complete-border': items.status === 'complete', 'pending-border': items.status === 'pending'}"  >
+              <div class="d-flex justify-content-between" 
+              [ngClass]="{'complete': items.status === 'complete', 'pending': items.status === 'pending'}" >
+                <h5 class=" text-white p-2">{{ items.name }} </h5>
+              </div>
+              <div class="p-2">
+                <p>{{ items.address }}</p>
+              </div>
+              <div class="d-flex p-2 text-primary">
+                <p class="action" (click)="edit(items.id)">Edit</p>
+                &nbsp;|&nbsp;
+                <p class="action" (click)="view(items.id)">View</p>
+                <!-- &nbsp;|&nbsp;
+                <p class="action" (click)="delete(items.id)">Delete</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

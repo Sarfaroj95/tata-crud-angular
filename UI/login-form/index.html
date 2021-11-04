@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./form.js"></script>
+  </head>
+  <body>
+    <div class="login-position">
+      <div class="login-form">
+        <p class="login-title">Login</p>
+        <p id="message"></p>
+        <form id="formData" onsubmit="return myFunction()" action="#">
+          <div class="margin-top">
+            <label for="username">Username:</label>
+            <input class="form-group" type="text" id="username" />
+          </div>
+          <div class="margin-top">
+            <label for="gander">Gander:</label><br />
+            <select class="form-group">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="margin-top">
+            <label for="password">Password:</label><br />
+            <input class="form-group" type="password" id="password" />
+          </div>
+          <div class="margin-top">
+            <input class="button" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

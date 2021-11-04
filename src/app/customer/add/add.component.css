@@ -1,0 +1,11 @@
+.form-padding {
+  padding: 30px;
+}
+.form-control:focus {
+  border: 1px solid #0d6efd;
+}
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .form-padding {
+    padding: 20px;
+  }
+}

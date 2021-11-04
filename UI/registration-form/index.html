@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Register</title>
+    <style>
+      .main-section {
+        height: 100vh;
+        background-color: rgb(215, 233, 248);
+      }
+      .form-padding {
+        padding: 40px;
+      }
+      @media screen and (max-width: 600px) and (min-width: 320px) {
+        .main-section {
+          height: 140vh;
+          background-color: rgb(215, 233, 248);
+        }
+        .container {
+          margin: 20px;
+        }
+        .row {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .form-padding {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="align-items-center h-100 d-flex">
+        <div class="container shadow-lg">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-12 bg-white">
+              <div class="form-padding">
+                <h3 class="pb-3 text-primary">Register Form</h3>
+                <form class="">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div>
+                    <label class="radio-inline"> Gander: </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio" selected /> Male
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio" /> Female
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" id="sel1">
+                      <option value="0" selected disabled>Select City</option>
+                      <option value="1">Kolkata</option>
+                      <option value="2">Bangalore</option>
+                      <option value="3">Channai</option>
+                      <option value="3">Pune</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Terms & Conditions
+                      <a target="_blank" href="https://getbootstrap.com/"
+                        >Click</a
+                      ></label
+                    >
+                  </div>
+                  <div class="pt-3">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 bg-primary text-white">
+              <div class="form-padding">
+                <h1>Responsive sites with Bootstrap</h1>
+                <p class="pt-4">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

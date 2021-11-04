@@ -1,0 +1,147 @@
+<div class="bg-light">
+  <div class="container py-5">
+    <app-header></app-header>
+    <div class="mt-4 col-lg-6 col-md-8 col-sm-12">
+      <div class="border border-primary">
+        <div class="bg-primary py-1">
+          <h6 class="text-white bg-primary" style="margin-left: 20px;">Add Customer</h6>
+        </div>
+        <form class="p-4" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter name"
+              formControlName="name"
+              (keypress)="only_alpha($event)"
+              [ngClass]="{
+                'is-invalid': f.name.touched && f.name.invalid
+              }"
+            />
+            <span
+              *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)"
+              class="text-danger txt"
+            >
+              <span *ngIf="f.name.errors.required" class="text-danger">
+                Name is required.
+              </span>
+            </span>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email"
+              formControlName="email"
+              [ngClass]="{
+                'is-invalid': f.email.touched && f.email.invalid
+              }"
+            />
+            <div
+              *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)"
+              class="text-danger txt"
+            >
+              <span *ngIf="f.email.errors.required" class="text-danger">
+                Name is required.
+              </span>
+              <span *ngIf="f.email.errors.pattern">
+                Email must be a valid formet.
+              </span>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Phone"
+              formControlName="phone"
+              maxlength="10"
+              (keypress)="only_number($event)"
+              [ngClass]="{
+                'is-invalid': f.phone.touched && f.phone.invalid
+              }"
+            />
+            <div
+              *ngIf="f.phone.invalid && (f.phone.dirty || f.phone.touched)"
+              class="text-danger txt"
+            >
+              <span *ngIf="f.phone.errors.required" class="text-danger">
+                Name is required.
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Address"
+              formControlName="address"
+              [ngClass]="{
+                'is-invalid': f.address.touched && f.address.invalid
+              }"
+            />
+            <div
+              *ngIf="
+                f.address.invalid && (f.address.dirty || f.address.touched)
+              "
+              class="text-danger txt"
+            >
+              <span *ngIf="f.address.errors.required" class="text-danger">
+                Name is required.
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group pb-2">
+            <textarea
+              class="form-control"
+              rows="2"
+              formControlName="description"
+              placeholder="Enter description"
+              [ngClass]="{
+                'is-invalid': f.description.invalid && f.description.touched
+              }"
+            ></textarea>
+
+            <div
+              *ngIf="
+                f.description.invalid &&
+                (f.description.dirty || f.description.touched)
+              "
+              class="text-danger txt"
+            >
+              <span *ngIf="f.description.errors.required" class="text-danger">
+                description is required
+              </span>
+            </div>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              formControlName="checkMe"
+              [ngClass]="{
+                'is-invalid': f.checkMe.invalid && f.checkMe.touched
+              }"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <div class="pt-3 d-flex">
+            <button
+              type="submit"
+              [disabled]="registerForm.invalid"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button (click)="reset()" class="btn btn-danger">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

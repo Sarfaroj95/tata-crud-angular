@@ -1,0 +1,17 @@
+.action {
+  cursor: pointer;
+}
+
+.pending{
+  background-color: blue;
+}
+.complete{
+  background-color: green;
+}
+
+.pending-border{
+  border: 1px solid blue;
+}
+.complete-border{
+  border: 1px solid green;
+}

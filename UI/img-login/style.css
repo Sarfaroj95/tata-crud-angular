@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgba(148, 187, 238, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./img/singapore-243669_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.login-position {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  padding-left: 160px;
+}
+.login-title {
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 0px;
+  border-left: 5px solid #0078c1;
+  padding-left: 10px;
+}
+.login-form {
+  width: 300px;
+  padding: 30px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.24);
+  background-color: #fafafa;
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 12px;
+}
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 18px;
+  height: 100%;
+}
+label {
+  font-size: 16px;
+}
+.form-group {
+  width: 100%;
+  border: 1px solid rgb(179, 177, 177);
+  border-radius: 0px;
+  padding: 8px 10px 5px 30px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+input:focus {
+  border-color: #0078c1;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.24);
+}
+
+select:focus {
+  border-color: #0078c1;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.24);
+}
+
+.button {
+  background-color: #0078c1;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+}
+.button:hover {
+  background-color: #035181;
+}
