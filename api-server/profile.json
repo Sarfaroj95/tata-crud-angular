@@ -1,0 +1,84 @@
+{
+  "customer": [
+    {
+      "name": "Sarfaroj Gayen",
+      "email": "sarfaroj@gmail.com",
+      "phone": "1234567890",
+      "address": "Krishnapur, West Medinipur",
+      "description": "The map alongside presents some of the notable locations in the subdivision. All places marked in the map are linked in the larger full screen map.",
+      "status": "complete",
+      "checkMe": true,
+      "id": 1
+    },
+    {
+      "name": "Suraj Mondal ",
+      "email": "Suraj@gmail.com",
+      "phone": "1234567890",
+      "address": "Keshpur, Chandroka",
+      "description": "I love India",
+      "status": "complete",
+      "checkMe": true,
+      "id": 2
+    },
+    {
+      "name": "Rishab Jain",
+      "email": "rishab@gmail.com",
+      "phone": "1234567890",
+      "address": "Malda",
+      "description": "I like Python",
+      "checkMe": true,
+      "status": "complete",
+      "id": 3
+    },
+    {
+      "name": "Vikash Roy",
+      "email": "viskahroy@gmail.com",
+      "phone": "123457891",
+      "address": "Bangalore",
+      "description": "I like Bangalore",
+      "checkMe": true,
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "name": "Jisan Hoque Gayen",
+      "email": "jisan@gmail.com",
+      "phone": "123456890",
+      "address": "Chasibar",
+      "description": "One of the most sought after courses amongst engineering students, Computer Science Engineering (CSE) is an academic programme which integrates the field of Computer Engineering and Computer Science. The programme, which emphasises the basics of computer programming and networking, comprises a plethora of topics",
+      "status": "pending",
+      "checkMe": true,
+      "id": 5
+    },
+    {
+      "name": "Hi",
+      "email": "hi@gmail.com",
+      "phone": "1234567890",
+      "address": "Krishnapur",
+      "description": "Hiiiiiiiiiiiiiiiiiiiii",
+      "status": "complete",
+      "checkMe": true,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "Rajib",
+      "email": "rajib@gmail.com",
+      "phone": "1234567890",
+      "address": "Asam",
+      "description": "Hi.................",
+      "status": "complete",
+      "checkMe": true
+    },
+    {
+      "id": 8,
+      "name": "asda",
+      "email": "sfas@gmail.com",
+      "phone": "1234567890",
+      "address": "hjghj",
+      "description": "kjhjk",
+      "status": "complete",
+      "checkMe": true
+    }
+  ]
+}
