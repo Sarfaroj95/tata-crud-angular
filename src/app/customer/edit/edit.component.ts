@@ -12,6 +12,10 @@ export class EditComponent implements OnInit {
   id: any;
   registerForm : FormGroup;
   customerData: any =[];
+  statusData = [
+    {status: 'complete'},
+    {status: 'pending'}
+  ]
   constructor(private fb: FormBuilder, 
     private customerService: CustomerService,
     private router: Router
@@ -34,6 +38,7 @@ export class EditComponent implements OnInit {
       phone: ['', Validators.required],
       address: ['', Validators.required],
       description: ['', Validators.required],
+      status: [],
       checkMe: [false, Validators.requiredTrue]
     })
   }

@@ -95,6 +95,11 @@
               </span>
             </div>
           </div>
+          <div class="form-group mb-3">
+            <select class="form-select"  formControlName="status"  aria-label="Default select example">
+              <option *ngFor="let data of statusData" [value]="data.status">{{data.status | titlecase}}</option>
+            </select>
+          </div>
 
           <div class="form-group pb-2">
             <textarea

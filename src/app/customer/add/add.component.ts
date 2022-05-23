@@ -10,6 +10,11 @@ import { CustomerService } from 'src/app/service/customer.service';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
+
+  statusData = [
+    {status: 'complete'},
+    {status: 'pending'}
+  ]
  
     registerForm : FormGroup;
     regFrom : FormGroup;
@@ -37,6 +42,7 @@ export class AddComponent implements OnInit {
         phone: ['', Validators.required],
         address: ['', Validators.required],
         description: ['', Validators.required],
+        status: [],
         checkMe: [false, Validators.requiredTrue]
       })
     }
