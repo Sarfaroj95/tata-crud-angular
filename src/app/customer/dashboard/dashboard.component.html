@@ -13,7 +13,7 @@
             class="col-lg-4 col-md-4 col-sm-12"
             *ngFor="let items of customer"
           >
-            <div class="mt-4" [ngClass]="{'complete-border': items.status === 'complete', 'pending-border': items.status === 'pending'}"  >
+            <div class="mt-4 border-r" [ngClass]="{'complete-border': items.status === 'complete', 'pending-border': items.status === 'pending'}"  >
               <div class="d-flex justify-content-between" 
               [ngClass]="{'complete': items.status === 'complete', 'pending': items.status === 'pending'}" >
                 <h5 class=" text-white p-2">{{ items.name }} </h5>

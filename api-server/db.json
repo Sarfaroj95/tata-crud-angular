@@ -6,19 +6,19 @@
       "phone": "1234567890",
       "address": "Krishnapur, West Medinipur",
       "description": "The map alongside presents some of the notable locations in the subdivision. All places marked in the map are linked in the larger full screen map.",
-      "status": "pending",
+      "status": "complete",
       "checkMe": true,
       "id": 1
     },
     {
-      "id": 2,
       "name": "Jisan Hoque Gayen",
       "email": "jisangayen@gmail.com",
       "phone": "1234567890",
       "address": "Rubi, Kolkata",
       "description": "I am studying in CSE at Meghnath Shah College.",
-      "status": "complete",
-      "checkMe": true
+      "status": "pending",
+      "checkMe": true,
+      "id": 2
     }
   ],
   "profile": {

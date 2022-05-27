@@ -15,3 +15,6 @@
 .complete-border{
   border: 1px solid green;
 }
+.border-r{
+  border-radius: 4px;
+}
